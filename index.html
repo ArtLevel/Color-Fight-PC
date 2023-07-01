@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cube Light War Pc v1.0 | Проект 8</title>
+  </head>
+  <body>
+		<!-- audio -->
+
+		<audio src="bg-sound.mp3" autoplay="autoplay" loop></audio>
+
+		<!-- Content -->
+	<div style="display: flex; flex-direction: column; align-items: center; row-gap: 30px;">
+		<div class="container" id="start-game" style="flex-direction: column;">
+			<div style="text-align: center; letter-spacing: 5px; color: #ebc974;" id="table-score"></div>
+			<h3 style="margin: 20px 0 10px 0; padding: 0; text-align: center; letter-spacing: 5px; color: #ebc974;" id="finish-game-score"><span id="time-game">00</span></h3>
+			<button class="btn-start-game" id="btn-start-game">Начать игру</button>
+		</div>
+		<div class="container" style="column-gap: 30px;">
+			<p style="color: #ebc974;">Цвет Пк 1: </p>
+			<div class="square" style="background: #6394bd;" id="title-pc-one"></div>
+
+			<p style="color: #ebc974;">Цвет Пк 2: </p>
+			<div class="square" style="background: #6cc05c;" id="title-pc-two"></div>
+
+			<p style="color: #ebc974;">Цвет Пк 3: </p>
+			<div class="square" style="background: #eb7c74" id="title-pc-three"></div>
+
+			<p style="color: #ebc974;">Цвет Пк 4: </p>
+			<div class="square" style="background: #b474eb" id="title-pc-four"></div>
+
+			<p style="color: #ebc974;">Цель: Выбери цвет который нравится и смотри битву ! Не забывай у тебя есть - кубики Герои !</p>
+		</div>
+		<div class="container" id="board"></div>
+	</div>
+	<!-- ./content -->
+		
+		<script src="app.js"></script>
+  </body>
+</html>

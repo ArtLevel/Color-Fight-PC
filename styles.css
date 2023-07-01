@@ -1,0 +1,90 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+
+	font-family: 'Russo One', sans-serif;
+	font-size: 18px;
+}
+
+.container {
+	max-width: 900px;
+	flex-wrap: wrap;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Square */
+
+.square {
+	width: 16px;
+	height: 16px;
+
+	margin: 2px;
+
+	background: #5757571d;
+	box-shadow: 0 0 2px #000;
+	transition: 0.5s ease;
+}
+
+.square:hover {
+	transition-duration: 0s;
+}
+
+.square-hero {
+	background: #eabf24!important;
+	box-shadow: 0 0 2px #eabf24, 0 0 10px #eabf24!important;
+}
+
+/* Active */
+
+.active {
+	box-shadow: 0 0 2px #edd56a, 0 0 10px #edd56a;
+}
+
+/* Btn Start Game */
+
+.btn-start-game {
+	padding: 10px;
+	outline: 0;
+
+	color: #fff;
+	background: #edd56a;
+	border-radius: 5px;
+	border: 2px solid #edd56a;
+
+	transition: all 0.2s linear;
+}
+
+.btn-start-game:hover {
+	background: #6394bd;
+	border-color: #6394bd;
+}
+
+/* Table */
+
+table {
+	width: 100%;
+	height: auto;
+}
+
+td {
+	max-width: 170px;
+	min-width: 170px;
+	padding: 10px;
+
+	border: 3px solid #edd56a;
+}
